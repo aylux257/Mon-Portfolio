@@ -1,0 +1,55 @@
+.navbar-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navbar-first ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-first ul li {
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+}
+
+.navbar-first ul li:first-child {
+    padding-top: 20px; /* Ajouter un padding en haut pour le premier élément */
+    padding-left: 25%;
+}
+
+.navbar-first ul li:nth-child(2) {
+    padding-top: 20px; /* Ajouter un padding en haut pour le deuxième élément */
+    padding-left: auto;
+}
+
+.navbar-first ul li:nth-child(3) {
+    padding-top: 20px; /* Ajouter un padding en haut pour le troisième élément */
+    padding-left: 20%;
+}
+
+.navbar-first ul li:nth-child(4) {
+    padding-top: 20px; /* Ajouter un padding en haut pour le quatrième élément */
+    padding-left: 22%;
+}
+
+.navbar-first h1{
+    color: white;
+}
+
+.navbar-first ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease, transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Added transition for color and transform */
+}
+
+.navbar-first ul li a:hover {
+    color: orange; /* Change color on hover */
+}
+
