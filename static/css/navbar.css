@@ -57,7 +57,6 @@
 
 .navbar-first ul li a:hover {
     color: orange; /* Change color on hover */
-    cursor: pointer;
 }
 
 .navbar-first {
@@ -111,11 +110,12 @@
     transition: color 0.5s ease;
 }
 
-.navbar ul li a:hover {
-    color: orange; /* Texte orange au survol */
-}
-
 .logo a {
     color: black; /* Texte noir pour le lien du logo */
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: orange;
 }
