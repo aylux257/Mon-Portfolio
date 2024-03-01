@@ -1,29 +1,56 @@
 document.addEventListener('DOMContentLoaded', function() {
   const cursor = document.querySelector('.cursor');
+
+  // Fonction pour mettre à jour la position du curseur
+  function updateCursorPosition(e) {
+    const posX = e.clientX;
+    const posY = e.clientY;
+    cursor.style.transform = `translate(${posX}px, ${posY}px)`;
+  }
+
+  // Mise à jour de la position initiale du curseur
+  updateCursorPosition({ clientX: window.innerWidth / 2, clientY: window.innerHeight / 2 });
+
+  // Gestion de l'événement de déplacement de la souris
+  document.addEventListener('mousemove', function(e) {
+    updateCursorPosition(e);
+    cursor.classList.add('active');
+  });
+
+  // Gestion de la fin de la transition
+  cursor.addEventListener('transitionend', function() {
+    cursor.classList.remove('active');
+  });
+
+  // Cursor Color for div='navbar-first'
   const links = document.querySelectorAll('.navbar-first ul li a');
 
-  document.addEventListener('mousemove', function(e) {
-      const posX = e.clientX //- cursor.offsetWidth / 2; // Ajuste la position horizontale en fonction de la moitié de la largeur du curseur
-      const posY = e.clientY //- cursor.offsetHeight / 2; // Ajuste la position verticale en fonction de la moitié de la hauteur du curseur
-
-      cursor.style.transform = `translate(${posX}px, ${posY}px)`;
-      cursor.classList.add('active'); // Ajoute la classe active pour déclencher la transition
-  });
-
-  cursor.addEventListener('transitionend', function() {
-      cursor.classList.remove('active'); // Supprime la classe active lorsque la transition est terminée
-  });
-
   links.forEach(link => {
-      link.addEventListener('mouseover', () => {
-          cursor.classList.add('active'); // Ajoute la classe active pour agrandir le curseur
-          cursor.style.borderColor = 'orange'; // Change la couleur de la bordure du curseur
-          cursor.classList.add('hovered'); // Ajoute la classe hovered pour agrandir le curseur
-      });
-      link.addEventListener('mouseleave', () => {
-          cursor.classList.remove('active'); // Retourne à la taille normale du curseur
-          cursor.style.borderColor = 'white'; // Rétablit la couleur de la bordure du curseur à blanc
-          cursor.classList.remove('hovered'); // Retire la classe hovered pour restaurer la taille normale du curseur
-      });
+    link.addEventListener('mouseover', () => {
+      cursor.classList.add('active');
+      cursor.style.borderColor = 'orange';
+      cursor.classList.add('hovered');
+    });
+    link.addEventListener('mouseleave', () => {
+      cursor.classList.remove('active');
+      cursor.style.borderColor = 'white';
+      cursor.classList.remove('hovered');
+    });
+  });
+
+  // Cursor Color for div='Accueil'
+  const AccueilLinks = document.querySelectorAll('#Accueil .all-navbar .navbar ul li a');
+
+  AccueilLinks.forEach(link => {
+    link.addEventListener('mouseover', () => {
+      cursor.classList.add('active');
+      cursor.style.borderColor = 'orange';
+      cursor.classList.add('hovered');
+    });
+    link.addEventListener('mouseleave', () => {
+      cursor.classList.remove('active');
+      cursor.style.borderColor = 'black';
+      cursor.classList.remove('hovered');
+    });
   });
 });

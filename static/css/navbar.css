@@ -2,7 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    padding-left: 45.275%;
+    padding-right: 45.275%;
+    padding-top: 13%;
+    padding-bottom: 13%;
 }
 
 .navbar-first ul {
@@ -51,5 +57,65 @@
 
 .navbar-first ul li a:hover {
     color: orange; /* Change color on hover */
+    cursor: pointer;
 }
 
+.navbar-first {
+  transition: transform 0.5s ease; /* Add transition effect */
+}
+
+.slide-left {
+  transform: translateX(-100%); /* Slide to the left */
+}
+
+.slide-back {
+    transform: translateX(0%);
+}
+
+/*navbar pour tous les liens*/
+
+.all-navbar {
+    background-color: #f5f5f5;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: -27vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin-right: 20px; /* Ajoute un espace entre le titre et les liens */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px; /* Ajoute un espacement entre les liens */
+}
+
+.navbar ul li a {
+    color: black; /* Texte noir */
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.navbar ul li a:hover {
+    color: orange; /* Texte orange au survol */
+}
+
+.logo a {
+    color: black; /* Texte noir pour le lien du logo */
+    text-decoration: none;
+}
