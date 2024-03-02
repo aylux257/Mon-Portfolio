@@ -80,12 +80,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
     margin-top: -27vh;
 }
 
 .navbar {
     display: flex;
+    padding: 0 20px;
     align-items: center;
 }
 
@@ -113,6 +113,7 @@
 .logo a {
     color: black; /* Texte noir pour le lien du logo */
     text-decoration: none;
+    padding-right: 20px;
     transition: color 0.3s ease;
 }
 
