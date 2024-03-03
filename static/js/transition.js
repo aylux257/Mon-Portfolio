@@ -30,10 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.style.left = '-100%';
         navbar.classList.remove('slide-back');
         accueilDiv.style.display = 'flex';
+        body.style.overflowY = 'hidden';
         setTimeout(function() {
             navbar.style.display = 'flex';
             cursorDot.style.backgroundColor = 'black';
             cursorOutline.style.border = "2px solid rgba(87, 87, 87, 0.5)";
+            portfolioDiv.style.zIndex = "-1";
+            aProposDiv.style.zIndex = '-1';
+            contacterDiv.style.zIndex = '-1';
             accueilDiv.style.zIndex = '1';
         }, 500);
         
@@ -50,6 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.style.display = 'flex';
             cursorDot.style.backgroundColor = 'black';
             cursorOutline.style.border = "2px solid rgba(87, 87, 87, 0.5)";
+            accueilDiv.style.zIndex = '-1';
+            aProposDiv.style.zIndex = '-1';
+            contacterDiv.style.zIndex = '-1';
             portfolioDiv.style.zIndex = '1';
         }, 500);
     });
@@ -61,11 +68,15 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.style.left = '100%';
         navbar.classList.remove('slide-back');
         aProposDiv.style.display = 'flex';
+        body.style.overflowY = 'hidden';
         setTimeout(function() {
             navbar.style.display = 'flex';
             cursorDot.style.backgroundColor = 'black';
             cursorOutline.style.border = "2px solid rgba(87, 87, 87, 0.5)";
+            accueilDiv.style.zIndex = '-1';
+            portfolioDiv.style.zIndex = '-1';
             aProposDiv.style.zIndex = '1';
+            contacterDiv.style.zIndex = '-1';
         }, 500);
     });
 
@@ -76,10 +87,14 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.style.left = '100%';
         navbar.classList.remove('slide-back');
         contacterDiv.style.display = 'flex';
+        body.style.overflowY = 'hidden';
         setTimeout(function() {
             navbar.style.display = 'flex';
             cursorDot.style.backgroundColor = 'black';
             cursorOutline.style.border = "2px solid rgba(87, 87, 87, 0.5)";
+            accueilDiv.style.zIndex = '-1';
+            portfolioDiv.style.zIndex = '-1';
+            aProposDiv.style.zIndex = '-1';
             contacterDiv.style.zIndex = '1';
         }, 500);
     });
@@ -103,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 portfolioDiv.style.display = 'none';
                 aProposDiv.style.display = 'none';
                 contacterDiv.style.display = 'none';
+                body.style.overflowY = 'visible';
             }, 500); 
         });
     }); 

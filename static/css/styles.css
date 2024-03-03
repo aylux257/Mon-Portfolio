@@ -26,7 +26,7 @@ body, html {
   margin-top: -100vh;
   flex-direction: column;
   align-items: center;
-  background-color: white;  
+  background-color: white;
 }
 
 .Accueil-Info {
@@ -44,10 +44,72 @@ body, html {
 
 .About-Info p, .About-Info2 p {
   font-size: larger;  
-  padding-top: 5%;
+  margin-top: 5%;
+}
+
+.Inside-About-Info, .Inside-About-Info2 {
+  width: 80%;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.Inside-About-Info h2, .Inside-About-Info2 h2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.Social-Network {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-item {
+  text-align: center;
+}
+
+.Inside-About-Info .Social-Network img{
+  width: 50%;
+  aspect-ratio: 1/1;
+}
+
+a {
+  cursor: none;
+  color: black;
 }
 
 .vertical-line {
   border-left: 1px solid black; /* Couleur et épaisseur de la ligne */
   height: 72vh; /* Hauteur de la ligne */
 }
+
+.horizontal-bar {
+  border-top: 1px solid black;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.Reach-Out {
+  display: flex;
+  width: 100%;
+  height: 100%; /* Hauteur de la div */
+}
+
+.Reach-Out p {
+  text-align: left; /* Alignement du texte à gauche */
+}
+
+.Portfolio-Hub {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.Portfolio-Hub h2 {
+  padding-top: 20px;
+}
+
+
