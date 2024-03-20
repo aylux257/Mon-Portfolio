@@ -6,8 +6,10 @@ body, html {
   font-weight: 400;
   font-style: normal;
   overflow-x: hidden;
+  overflow-y: hidden;
   cursor: none;
   background-color: black;
+  max-height: fit-content;
 }
 
 .container {
@@ -81,8 +83,13 @@ a {
 }
 
 .vertical-line {
-  border-left: 1px solid black; /* Couleur et épaisseur de la ligne */
-  height: 72vh; /* Hauteur de la ligne */
+  border-left: 1px solid black;
+  height: 72vh; 
+}
+
+.vertical-line-portfolio {
+  border-left: 1px solid black;
+  height: 100%; 
 }
 
 .horizontal-bar {
@@ -91,25 +98,73 @@ a {
   margin-top: 10%;
 }
 
+.horizontal-bar-portfolio{
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.small-horizontal-bar-portfolio{
+  border-top: 1px solid black;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .Reach-Out {
   display: flex;
   width: 100%;
-  height: 100%; /* Hauteur de la div */
+  height: 100%; 
 }
 
 .Reach-Out p {
-  text-align: left; /* Alignement du texte à gauche */
+  text-align: left;
 }
 
 .Portfolio-Hub {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .Portfolio-Hub h2 {
   padding-top: 20px;
 }
+
+.Portfolio-Hub1, .Portfolio-Hub2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#Portfolio-Universitaire, #Portfolio-Personnel {
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  border: 1px solid black;
+  background-color: black;
+  font-size: larger;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: color 0.8s ease, background-color 0.8s ease;
+}
+
+#Portfolio-Universitaire:hover, #Portfolio-Personnel:hover {
+  background-color: white;
+  color: black;
+}
+
+/*.div-Portfolio-Personnel {
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}*/
+
+
 
 

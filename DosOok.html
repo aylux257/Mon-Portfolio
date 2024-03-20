@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style-portfolio.css">
+    <link rel="stylesheet" href="static/css/cursor.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="static/images/Moon-1-nobg.png" />
+    <title>DosSend - DosRead</title>
+</head>
+
+<body>
+    <div id="Mon-Portfolio">
+        <div class="all-navbar">
+            <div class="navbar">
+                <h1>RÖTHLIN GAËL</h1>
+                <ul>
+                    <li><a id="accueilLink">ACCUEIL</a></li>
+                    <li><a><b>MON PORTFOLIO</b></a></li>
+                    <li><a id="aProposLink">À PROPOS</a></li>
+                    <li><a id="contactLink">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a id="backToNavbar">Retour</a>
+            </div>
+        </div>
+        <div class="Presentation-DosOok">
+            <h2>Présentation du projet</h2>
+            <h3>DosOok : Transfert de Données Numériques par le Son</h3>
+            <h4>Le Défi</h4>
+            <p>
+                Durant le premier semestre, nous avons relevé le défi passionnant de concevoir un ensemble de deux
+                programmes capables
+                d'échanger des données numériques via un canal audio. Ce projet, nommé DosOok, nous a plongés au cœur de
+                la transmission de données à travers un médium peu conventionnel mais prometteur : le son.
+            </p>
+            <h3>Pourquoi DosOok ?</h3>
+            <p>
+                La transmission de données par le son n'est pas une idée nouvelle, mais elle suscite un regain d'intérêt
+                en raison de ses propriétés uniques :
+
+                Utilisation d'ondes sonores proches des ultrasons ou audibles pour coder les données, ne nécessitant pas
+                de matériel spécialisé comme le WiFi, le Bluetooth ou le NFC.
+
+                Possibilité d'échanger des données numériques entre n'importe quel appareil doté d'un haut-parleur et/ou
+                d'un microphone.
+
+                Transfert rapide de données sécurisées par cryptographie entre deux appareils, offrant une expérience
+                utilisateur sans friction.
+            </p>
+            <h3>Les Signaux Audio Numériques</h3>
+            <p>
+                Un signal numérique est une suite de valeurs définies à des instants d'échantillonnage et représentées
+                selon un format donné. Dans le cadre de l'audio, la fréquence d'échantillonnage est une composante
+                cruciale, généralement de 44,1 kHz.
+            </p>
+            <h3>La Transmission Sans Fil des Signaux Audio</h3>
+            <p>
+                Transmettre des signaux audio tels quels n'est pas efficace sur de longues distances. C'est pourquoi
+                nous utilisons des modulations telles que la modulation d'amplitude par sauts (ASK) dans le projet
+                DosOok. Cette méthode implique de multiplier une onde porteuse par la traduction binaire des données à
+                transmettre.
+            </p>
+            <h3>La Mémorisation des Données Audio : Format RIFF (WAV)</h3>
+            <p>
+                Pour faciliter la mise au point des programmes, nous utilisons une mémorisation intermédiaire des
+                signaux audio sous forme de fichiers .wav. Les paramètres des fichiers .wav sont standardisés et offrent
+                une certaine flexibilité, notamment une fréquence d'échantillonnage de 44,1 kHz et un format PCM entier.
+            </p>
+            <h3>Les Programmes DosSend et DosRead</h3>
+            <p>
+                <b>DosSend :</b> Programme émetteur responsable de la transmission des données. Il implémente la
+                modulation
+                d'amplitude par sauts (ASK) pour convertir les données en signaux audio.<br>
+
+                <b>DosRead :</b> Programme récepteur chargé de décoder les signaux audio reçus et de les transformer en
+                données
+                exploitables.
+            </p>
+            <h3>Exemple de Transmission et de Réception</h3>
+
+
+            Un exemple concret est la transmission du message "Hello World !" à travers DosSend et sa réception via
+            DosRead. Le processus implique la conversion du message en signaux audio modulés, suivie de leur
+            décodage pour retrouver le message original.
+            </p>
+            <p>
+                Voici le signal modulé à partir du message suivant : 'Hello World !'
+            </p>
+            <img src="./static/images/HelloWorld.png" alt="Message Hello World">
+            <h3>Conclusion</h3>
+            <p>
+                Le projet DosOok représente une exploration fascinante des possibilités offertes par la transmission de
+                données par le son. En combinant théorie et pratique, nous avons développé une compréhension approfondie
+                de cette technologie émergente et ouvert de nouvelles perspectives quant à ses applications
+                potentielles.
+
+                
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

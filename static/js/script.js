@@ -26,8 +26,10 @@ window.addEventListener("mousemove", function(e) {
   } else {
     const body = document.querySelector('body');
     if (body.style.backgroundColor == 'white'){
+      cursorDot.style.backgroundColor = 'black';
       cursorOutline.style.borderColor = 'rgba(87, 87, 87, 0.5)'; 
     }else{
+      cursorDot.style.backgroundColor = 'white';
       cursorOutline.style.borderColor = 'rgba(210, 210, 210, 0.5)'; 
     }
   }

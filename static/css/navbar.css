@@ -4,6 +4,7 @@
     align-items: center;
     background-color: black;
     height: 100vh;
+    width: max-content;
     margin: 0;
     padding-left: 45.275%;
     padding-right: 45.275%;

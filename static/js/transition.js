@@ -18,9 +18,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const aProposDiv = document.getElementById("A-Propos");
     const contacterDiv = document.getElementById("Contacter");
 
+    //Portfolio-Div
+    const UnivPortfolioDiv = document.getElementById('div-Portfolio-Universitaire');
+    const PersoPortfolioDiv = document.querySelector('div-Portfolio-Personnel');
+
     // Cursor
     const cursorDot = document.querySelector("[data-cursor-dot]");
     const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+    // Button Portfolio
+    const PortfolioUniv = document.getElementById('Portfolio-Universitaire');
+    const PortfolioPerso = document.querySelector('Portfolio-Personnel');
 
 
     accueilButton.addEventListener('click', function(e) {
